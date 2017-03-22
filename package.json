@@ -1,0 +1,110 @@
+{
+  "_args": [
+    [
+      "lokijs@git+https://github.com/exposebox/LokiJS.git",
+      "C:\\Exposebox\\Source\\nodeServer"
+    ]
+  ],
+  "_from": "git+https://github.com/exposebox/LokiJS.git",
+  "_id": "lokijs@1.3.16",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/lokijs",
+  "_phantomChildren": {},
+  "_requested": {
+    "hosted": {
+      "directUrl": "https://raw.githubusercontent.com/exposebox/LokiJS/master/package.json",
+      "gitUrl": "git://github.com/exposebox/LokiJS.git",
+      "httpsUrl": "git+https://github.com/exposebox/LokiJS.git",
+      "shortcut": "github:exposebox/LokiJS",
+      "ssh": "git@github.com:exposebox/LokiJS.git",
+      "sshUrl": "git+ssh://git@github.com/exposebox/LokiJS.git",
+      "type": "github"
+    },
+    "name": "lokijs",
+    "raw": "lokijs@git+https://github.com/exposebox/LokiJS.git",
+    "rawSpec": "git+https://github.com/exposebox/LokiJS.git",
+    "scope": null,
+    "spec": "git+https://github.com/exposebox/LokiJS.git",
+    "type": "hosted"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://github.com/exposebox/LokiJS.git#c65008ffb65a06d2a57c5e11040e233eefdc017c",
+  "_shasum": "c00f5b94bac4bb27b8d9ba156fb507f19cf4ea8d",
+  "_shrinkwrap": null,
+  "_spec": "lokijs@git+https://github.com/exposebox/LokiJS.git",
+  "_where": "C:\\Exposebox\\Source\\nodeServer",
+  "author": {
+    "email": "joe.minichino@gmail.com",
+    "name": "Joe Minichino"
+  },
+  "bugs": {
+    "url": "https://github.com/techfort/LokiJS/issues"
+  },
+  "contributors": [
+    {
+      "name": "Dave",
+      "email": "admin@obeliskos.com"
+    }
+  ],
+  "dependencies": {},
+  "description": "Fast document oriented javascript in-memory database",
+  "devDependencies": {
+    "istanbul": "^0.3.13",
+    "jasmine": "^2.2.1",
+    "jsdoc": "^3.4.0",
+    "jshint": "^2.6.3",
+    "karma": "^0.12.31",
+    "karma-cli": "0.0.4",
+    "karma-coverage": "^0.2.7",
+    "karma-jasmine": "^0.3.5",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "mocha": "^2.0.1",
+    "phantomjs": "^1.9.16",
+    "rimraf": "^2.3.2",
+    "should": "^4.3.0",
+    "uglify-js": "^2.4.17"
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "gitHead": "c65008ffb65a06d2a57c5e11040e233eefdc017c",
+  "homepage": "http://lokijs.org",
+  "keywords": [
+    "document-oriented",
+    "in-memory",
+    "javascript",
+    "json",
+    "lokijs",
+    "mmdb",
+    "nosql"
+  ],
+  "license": "MIT",
+  "main": "src/lokijs.js",
+  "name": "lokijs",
+  "optionalDependencies": {},
+  "readme": "# LokiJS\r\n\r\n[![Join the chat at https://gitter.im/techfort/LokiJS](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/techfort/LokiJS?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)\r\n![alt CI-badge](https://travis-ci.org/techfort/LokiJS.svg?branch=master)\r\n[![npm version](https://badge.fury.io/js/lokijs.svg)](http://badge.fury.io/js/lokijs)\r\n[![alt packagequality](http://npm.packagequality.com/shield/lokijs.svg)](http://packagequality.com/#?package=lokijs)\r\n\r\n## Overview\r\n\r\nLokiJS is a document oriented database written in javascript, published under MIT License.\r\nIts purpose is to store javascript objects as documents in a nosql fashion and retrieve them with a similar mechanism.\r\nRuns in node (including cordova/phonegap and node-webkit) and the browser.\r\nLokiJS is ideal for the following scenarios: \r\n\r\n1. client-side in-memory db is ideal (e.g., a session store)\r\n2. performance critical applications\r\n3. cordova/phonegap mobile apps where you can leverage the power of javascript and avoid interacting with native databases\r\n4. data sets loaded into a browser page and synchronised at the end of the work session\r\n5. node-webkit desktop apps\r\n\r\nLokiJS supports indexing and views and achieves high-performance through maintaining unique and binary indexes (indices) for data.\r\n\r\n## Demo\r\n\r\nThe following demos are available:\r\n- [Sandbox / Playground] (https://rawgit.com/techfort/LokiJS/master/examples/sandbox/LokiSandbox.htm)\r\n- a node-webkit small demo in the folder demos/desktop_app. You can launch it by running `/path/to/nw demos/desktop_app/'\r\n\r\n## Wiki\r\nExample usage can be found on the [wiki](https://github.com/techfort/LokiJS/wiki)\r\n\r\n### Main Features\r\n\r\n1. Fast performance NoSQL in-memory database, collections with unique index (1.1M ops/s) and binary-index (500k ops/s)\r\n2. Runs in multiple environments (browser, node)\r\n3. Dynamic Views for fast access of data subsets\r\n4. Built-in persistence adapters, and the ability to support user-defined ones\r\n5. Changes API\r\n6. Joins\r\n\r\n## Current state\r\n\r\nLokiJS is at version 1.3 [Eostre].\r\nAs LokiJS is written in Javascript it can be run on any environment supporting javascript such as browsers, node.js/node-webkit, and hybrid mobile apps (such as phonegap/cordova).\r\n\r\nMade by [@techfort](http://twitter.com/tech_fort), with the precious help of Dave Easterday. \r\n\r\n_[Leave a tip](https://gratipay.com/techfort/) or give us a star if you find LokiJS useful!_\r\n\r\n## Installation\r\n\r\nFor browser environments you simply need the lokijs.js file contained in src/\r\n\r\nYou can use bower to install lokijs with `bower install lokijs`\r\n\r\nFor node environments you can install through `npm install lokijs`.\r\n\r\n\r\n\r\n## Roadmap\r\n* exactIndex\r\n* key-value datastore\r\n* MRU cache\r\n* MongoDB API compatibility\r\n* server standalone (tcp and http servers and clients)\r\n* replication and horizontal scaling\r\n\r\n## Contact\r\n\r\nFor help / enquiries contact joe.minichino@gmail.com\r\n\r\n## Commercial Support\r\n\r\nFor commercial support contact info.techfort@gmail.com\r\n\r\n## License\r\n\r\nCopyright (c) 2015 TechFort <joe.minichino@gmail.com>\r\n\r\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\r\n\r\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\r\n\r\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\r\n\r\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techfort/LokiJS.git"
+  },
+  "scripts": {
+    "build": "npm run build:lokijs && npm run build:indexedAdapter",
+    "build:indexedAdapter": "uglifyjs src/loki-indexed-adapter.js > build/loki-indexed-adapter.min.js",
+    "build:lokijs": "uglifyjs src/lokijs.js > build/lokijs.min.js",
+    "clean": "rimraf build/* coverage/* node_modules",
+    "jsdoc": "jsdoc ./src/lokijs.js",
+    "lint": "jshint src/**.js",
+    "postbuild": "karma start karma.build.conf.js --single-run",
+    "pour:beer": "echo New npm version published, one beer for you !",
+    "prepublish": "npm run build",
+    "pretest": "npm run lint",
+    "test": "npm run test:browser && npm run test:node",
+    "test:browser": "karma start karma.conf.js --single-run",
+    "test:node": "istanbul cover --dir coverage/nodejs jasmine"
+  },
+  "version": "1.3.16"
+}
