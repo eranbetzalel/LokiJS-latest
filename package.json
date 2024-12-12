@@ -98,7 +98,6 @@
     "clean": "rimraf build/* coverage/* node_modules",
     "jsdoc": "jsdoc ./src/lokijs.js",
     "lint": "jshint src/**.js",
-    "postbuild": "karma start karma.build.conf.js --single-run",
     "pour:beer": "echo New npm version published, one beer for you !",
     "prepublish": "npm run build",
     "pretest": "npm run lint",
